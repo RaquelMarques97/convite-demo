@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Allan:700,400);
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color:black;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  font-family: Allan;
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+  
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 100vw;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(240, 94, 138);
+  color: #fff;
+  cursor: pointer;
+ 
+}
+
+h1{
+  margin-left:100px;
+}
+
+#myBtn:hover {
+  background: rgb(240, 94, 138);
+  color: white;
+}
+
+#crisalida {
+  margin-left:40%;
+}
+
+
+.butterfly {
+  
+
+  -webkit-animation: slideIn 71s forwards;
+  -moz-animation: slideIn 71s forwards;
+  animation: slideIn 71s forwards;
+}
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+@media only screen and (max-width: 760px) {
+
+
+  #myVideo {
+    right:-250px;
+    position: fixed;  
+
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .butterfly{
+   margin-top:20vh;
+    zoom:60%
+  }
+  
+
+
+  h1{
+   margin-left:20px;
+   margin-top:0;
+  }
+
+
+}
